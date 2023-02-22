@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         val items = fetchData()
-        val adaptor = RVAdaptor(items)
-        recyclerView.adapter = adaptor
+        val adapter = RVAdaptor(items)
+        recyclerView.adapter = adapter
     }
 
     fun fetchData(): ArrayList<String> {
